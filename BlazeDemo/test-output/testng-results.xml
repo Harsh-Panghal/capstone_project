@@ -1,76 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-11T13:34:00 IST" name="BlazeDemo Negative Suite" finished-at="2026-06-11T13:34:13 IST" duration-ms="12973">
+  <suite started-at="2026-06-11T14:26:04 IST" name="BlazeDemo Capstone Suite" finished-at="2026-06-11T14:26:29 IST" duration-ms="25020">
     <groups>
+      <group name="Purchase">
+        <method signature="BlazeDemoE2ETest.testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" name="testPurchaseFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" name="testPurchaseFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" name="testPurchaseFlight" class="tests.BlazeDemoE2ETest"/>
+      </group> <!-- Purchase -->
+      <group name="Selection">
+        <method signature="BlazeDemoE2ETest.testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" name="testSelectCheapestFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" name="testSelectCheapestFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" name="testSelectCheapestFlight" class="tests.BlazeDemoE2ETest"/>
+      </group> <!-- Selection -->
+      <group name="Search">
+        <method signature="BlazeDemoE2ETest.testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" name="testFlightSearch" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" name="testFlightSearch" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" name="testFlightSearch" class="tests.BlazeDemoE2ETest"/>
+      </group> <!-- Search -->
+      <group name="Regression">
+        <method signature="BlazeDemoE2ETest.testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" name="testPurchaseFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" name="testPurchaseFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" name="testPurchaseFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" name="testVerifyBookingConfirmation" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" name="testVerifyBookingConfirmation" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" name="testVerifyBookingConfirmation" class="tests.BlazeDemoE2ETest"/>
+      </group> <!-- Regression -->
+      <group name="E2E">
+        <method signature="BlazeDemoE2ETest.testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" name="testVerifyBookingConfirmation" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" name="testVerifyBookingConfirmation" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" name="testVerifyBookingConfirmation" class="tests.BlazeDemoE2ETest"/>
+      </group> <!-- E2E -->
+      <group name="Smoke">
+        <method signature="BlazeDemoE2ETest.testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" name="testFlightSearch" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" name="testFlightSearch" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" name="testFlightSearch" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" name="testSelectCheapestFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" name="testSelectCheapestFlight" class="tests.BlazeDemoE2ETest"/>
+        <method signature="BlazeDemoE2ETest.testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" name="testSelectCheapestFlight" class="tests.BlazeDemoE2ETest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2026-06-11T13:34:00 IST" name="Authentication and Validation Defect Tests" finished-at="2026-06-11T13:34:13 IST" duration-ms="12973">
-      <class name="tests.BlazeDemoNegativeTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BlazeDemoNegativeTests@128d2484]" started-at="2026-06-11T13:34:01 IST" name="setUp" finished-at="2026-06-11T13:34:05 IST" duration-ms="4046" status="PASS">
+    <test started-at="2026-06-11T14:26:04 IST" name="End To End Flight Booking Validation" finished-at="2026-06-11T14:26:29 IST" duration-ms="25020">
+      <class name="tests.BlazeDemoE2ETest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" started-at="2026-06-11T14:26:04 IST" name="setUp" finished-at="2026-06-11T14:26:07 IST" duration-ms="3242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegistrationThrows419Error()[pri:1, instance:tests.BlazeDemoNegativeTests@128d2484]" started-at="2026-06-11T13:34:05 IST" name="testRegistrationThrows419Error" description="Jira Defect : Registration Blocked by 419 Error" finished-at="2026-06-11T13:34:08 IST" duration-ms="3098" status="PASS">
+        <test-method signature="testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" started-at="2026-06-11T14:26:07 IST" name="testFlightSearch" finished-at="2026-06-11T14:26:08 IST" duration-ms="956" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRegistrationThrows419Error -->
-        <test-method signature="testLoginThrows419Error()[pri:2, instance:tests.BlazeDemoNegativeTests@128d2484]" started-at="2026-06-11T13:34:08 IST" name="testLoginThrows419Error" description="Jira Defect : Login Blocked by 419 Error" finished-at="2026-06-11T13:34:09 IST" duration-ms="1432" status="PASS">
+        </test-method> <!-- testFlightSearch -->
+        <test-method signature="testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" started-at="2026-06-11T14:26:08 IST" name="testSelectCheapestFlight" finished-at="2026-06-11T14:26:09 IST" depends-on-methods="tests.BlazeDemoE2ETest.testFlightSearch" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginThrows419Error -->
-        <test-method signature="testInvalidLoginCredentials()[pri:3, instance:tests.BlazeDemoNegativeTests@128d2484]" started-at="2026-06-11T13:34:09 IST" name="testInvalidLoginCredentials" description="Authentication Defect: Invalid Login Credentials Rejection" finished-at="2026-06-11T13:34:10 IST" duration-ms="913" status="PASS">
+        </test-method> <!-- testSelectCheapestFlight -->
+        <test-method signature="testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" started-at="2026-06-11T14:26:09 IST" name="testPurchaseFlight" finished-at="2026-06-11T14:26:11 IST" depends-on-methods="tests.BlazeDemoE2ETest.testSelectCheapestFlight" duration-ms="1728" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidLoginCredentials -->
-        <test-method signature="testEmptyFormSubmissionOnPurchase()[pri:4, instance:tests.BlazeDemoNegativeTests@128d2484]" started-at="2026-06-11T13:34:11 IST" name="testEmptyFormSubmissionOnPurchase" description="Form Validation Defect: Submitting Empty Purchase Form" finished-at="2026-06-11T13:34:13 IST" duration-ms="2149" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Critical Security Bug: System confirmed booking with empty passenger details! expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Critical Security Bug: System confirmed booking with empty passenger details! expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertFalse(Assert.java:79)
-at tests.BlazeDemoNegativeTests.testEmptyFormSubmissionOnPurchase(BlazeDemoNegativeTests.java:78)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- testPurchaseFlight -->
+        <test-method signature="testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@13f17eb4, instance params:[{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}]]" started-at="2026-06-11T14:26:11 IST" name="testVerifyBookingConfirmation" finished-at="2026-06-11T14:26:11 IST" depends-on-methods="tests.BlazeDemoE2ETest.testPurchaseFlight" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEmptyFormSubmissionOnPurchase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BlazeDemoNegativeTests@128d2484]" started-at="2026-06-11T13:34:13 IST" name="tearDown" finished-at="2026-06-11T13:34:13 IST" duration-ms="174" status="PASS">
+        </test-method> <!-- testVerifyBookingConfirmation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" started-at="2026-06-11T14:26:11 IST" name="tearDown" finished-at="2026-06-11T14:26:12 IST" duration-ms="455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.BlazeDemoNegativeTests -->
-    </test> <!-- Authentication and Validation Defect Tests -->
-  </suite> <!-- BlazeDemo Negative Suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" started-at="2026-06-11T14:26:12 IST" name="setUp" finished-at="2026-06-11T14:26:17 IST" duration-ms="5127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" started-at="2026-06-11T14:26:17 IST" name="testFlightSearch" finished-at="2026-06-11T14:26:18 IST" duration-ms="948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearch -->
+        <test-method signature="testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" started-at="2026-06-11T14:26:18 IST" name="testSelectCheapestFlight" finished-at="2026-06-11T14:26:19 IST" depends-on-methods="tests.BlazeDemoE2ETest.testFlightSearch" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectCheapestFlight -->
+        <test-method signature="testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" started-at="2026-06-11T14:26:19 IST" name="testPurchaseFlight" finished-at="2026-06-11T14:26:20 IST" depends-on-methods="tests.BlazeDemoE2ETest.testSelectCheapestFlight" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPurchaseFlight -->
+        <test-method signature="testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@1d0d6318, instance params:[{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}]]" started-at="2026-06-11T14:26:20 IST" name="testVerifyBookingConfirmation" finished-at="2026-06-11T14:26:20 IST" depends-on-methods="tests.BlazeDemoE2ETest.testPurchaseFlight" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyBookingConfirmation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" started-at="2026-06-11T14:26:20 IST" name="tearDown" finished-at="2026-06-11T14:26:21 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" started-at="2026-06-11T14:26:21 IST" name="setUp" finished-at="2026-06-11T14:26:24 IST" duration-ms="3381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFlightSearch()[pri:1, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" started-at="2026-06-11T14:26:24 IST" name="testFlightSearch" finished-at="2026-06-11T14:26:25 IST" duration-ms="1063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFlightSearch -->
+        <test-method signature="testSelectCheapestFlight()[pri:2, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" started-at="2026-06-11T14:26:25 IST" name="testSelectCheapestFlight" finished-at="2026-06-11T14:26:26 IST" depends-on-methods="tests.BlazeDemoE2ETest.testFlightSearch" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectCheapestFlight -->
+        <test-method signature="testPurchaseFlight()[pri:3, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" started-at="2026-06-11T14:26:26 IST" name="testPurchaseFlight" finished-at="2026-06-11T14:26:28 IST" depends-on-methods="tests.BlazeDemoE2ETest.testSelectCheapestFlight" duration-ms="1997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPurchaseFlight -->
+        <test-method signature="testVerifyBookingConfirmation()[pri:4, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" started-at="2026-06-11T14:26:28 IST" name="testVerifyBookingConfirmation" finished-at="2026-06-11T14:26:28 IST" depends-on-methods="tests.BlazeDemoE2ETest.testPurchaseFlight" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyBookingConfirmation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.BlazeDemoE2ETest@4bc28c33, instance params:[{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&#039;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}]]" started-at="2026-06-11T14:26:29 IST" name="tearDown" finished-at="2026-06-11T14:26:29 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.BlazeDemoE2ETest -->
+    </test> <!-- End To End Flight Booking Validation -->
+  </suite> <!-- BlazeDemo Capstone Suite -->
 </testng-results>

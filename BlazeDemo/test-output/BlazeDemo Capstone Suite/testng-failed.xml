@@ -10,7 +10,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testPurchaseFlight" invocation-numbers="0 2"/>
+          <include name="testPurchaseFlight"/>
           <include name="testSelectCheapestFlight"/>
           <include name="testVerifyBookingConfirmation"/>
           <include name="testFlightSearch"/>
