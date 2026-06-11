@@ -30,6 +30,19 @@ pipeline {
             	}
             }
         }
+        stage('Docker Build') {
+            steps {
+                dir('BlazeDemo') {
+                    bat 'docker build -t blazedemo-framework .'
+                }
+            }
+        }
+
+        stage('Docker Run') {
+            steps {
+				bat 'docker run --rm blazedemo-framework'
+            }
+        }
     }
 
     post {
