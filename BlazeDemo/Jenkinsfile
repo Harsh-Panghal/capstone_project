@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'master',
-                    url: 'https://github.com/Harsh-Panghal/java_with_selenium'
+                    url: 'https://github.com/Harsh-Panghal/capstone_project'
             }
         }
 
