@@ -32,8 +32,8 @@ The framework strictly adheres to the **Page Object Model (POM)** design pattern
      ┣ 📂 src/main/java
      ┣ 📂 src/test/java
      ┃ ┣ 📂 base         # Engine: BaseTest, DriverFactory (ThreadLocal)
-     ┃ ┣ 📂 pages        # Blueprints: HomePage, FlightResultsPage, PurchasePage, ConfirmationPage
-     ┃ ┣ 📂 tests        # Core Logic: BlazeDemoE2ETest
+     ┃ ┣ 📂 pages        # Blueprints: HomePage, FlightResultsPage, PurchasePage, ConfirmationPage, LoginPage, RegisterPage
+     ┃ ┣ 📂 tests        # Core Logic: BlazeDemoE2ETest, BlazeDemoNegativeTest
      ┃ ┣ 📂 utils        # Connectors: ConfigReader, ExcelReader, ExtentReportManager
      ┃ ┗ 📂 listeners    # Monitors: TestListener, RetryAnalyzer
      ┣ 📂 src/test/resources
@@ -42,10 +42,12 @@ The framework strictly adheres to the **Page Object Model (POM)** design pattern
      ┣ 📂 reports
      ┃ ┣ 📂 Screenshots        # Auto-generated visual proofs
      ┃ ┗ 📜 SparkReport.html   # Interactive Dashboard
+     ┣ 📜 Dockerfile
      ┣ 📜 Jenkinsfile          # CI/CD Declarative Pipeline
      ┗ 📜 pom.xml              # Maven Dependencies
      ┗ 📜 testng.xml           # Suite Execution & Group Control
-
+     ┗ 📜 testng-negative.xml  
+     
 ## ⚙️ Setup & Execution
 
 ### 1. Local Execution via IDE
