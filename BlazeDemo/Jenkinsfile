@@ -1,0 +1,47 @@
+pipeline {
+    agent any 
+
+    tools {
+         maven 'Maven_3' 
+    }
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git branch: 'master',
+                    url: 'https://github.com/Harsh-Panghal/java_with_selenium'
+            }
+        }
+
+        stage('Clean & Build') {
+            steps {
+                dir('BlazeDemo') {
+                    echo 'Cleaning old files and compiling the framework...'
+                	bat 'mvn clean compile'
+                }
+            }
+        }
+
+        stage('Execute TestNG Suite') {
+            steps {
+				dir('BlazeDemo') {
+                	echo 'Triggering the End-to-End Flight Booking Automation...'
+                	bat 'mvn test' 
+            	}
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Archiving Extent Reports & Screenshots for Dashboard...'
+            archiveArtifacts artifacts: 'reports/**/*', allowEmptyArchive: true
+        }
+        success {
+            echo 'E2E Automation Pipeline Completed Successfully!'
+        }
+        failure {
+            echo 'Pipeline Failed. Check the Extent Report and Screenshots for details.'
+        }
+    }
+}
