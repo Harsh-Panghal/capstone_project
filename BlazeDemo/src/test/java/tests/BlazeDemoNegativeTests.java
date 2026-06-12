@@ -39,21 +39,19 @@ public class BlazeDemoNegativeTests extends BaseTest {
         Assert.assertTrue(isErrorDisplayed, "Defect not reproduced: 419 Error page was expected but not found!");
     }
 
-    @Test(priority = 3, description = "Authentication Defect: Invalid Login Credentials Rejection")
-    public void testInvalidLoginCredentials() {
-        System.out.println("Executing Negative Test: Invalid Login Credentials");
-        driver.get(prop.getProperty("url") + "login"); 
+    @Test(priority = 3, description = "Data Integrity Defect: Hardcoded Dummy Data Displayed")
+    public void testDataIntegrityIssue() {
+        System.out.println("Executing Negative Test: Data Integrity Issue (Hardcoded Data)");
+       
+        driver.get(prop.getProperty("url"));
+        driver.findElement(By.cssSelector("input[type='submit']")).click(); // Clicks 'Find Flights'
         
-        LoginPage loginPage = new LoginPage(driver);
-        // Providing fake/unregistered credentials
-        loginPage.loginUser("hacker_fake_email@test.com", "WrongPassword123!");
+        driver.findElement(By.cssSelector("input[type='submit']")).click(); // Clicks 'Choose This Flight'
         
-        String pageSource = driver.getPageSource();
-        boolean isLoginRejected = pageSource.contains("These credentials do not match our records.") 
-                               || pageSource.contains("419")
-                               || pageSource.contains("Login"); // Still on login page
+        String pageText = driver.findElement(By.tagName("body")).getText();
+        boolean isHardcodedDataPresent = pageText.contains("Airline: United") && pageText.contains("Price: 400");
         
-        Assert.assertTrue(isLoginRejected, "Critical Security Defect: System allowed login with invalid/fake credentials!");
+        Assert.assertFalse(isHardcodedDataPresent, "Data Integrity Defect: System is displaying hardcoded dummy data (United/400) instead of the actual selected flight!");
     }
 
     @Test(priority = 4, description = "Form Validation Defect: Submitting Empty Purchase Form")

@@ -10,6 +10,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="testDataIntegrityIssue"/>
           <include name="testEmptyFormSubmissionOnPurchase"/>
         </methods>
       </class> <!-- tests.BlazeDemoNegativeTests -->

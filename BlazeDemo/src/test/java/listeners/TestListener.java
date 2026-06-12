@@ -44,26 +44,6 @@ public class TestListener implements ITestListener {
     public void onTestSuccess(ITestResult result) {
         System.out.println("Test Passed: " + result.getMethod().getMethodName());
         extentTest.get().log(Status.PASS, "Test Passed Successfully");
-
-        WebDriver driver = DriverFactory.getDriver();
-        if (driver != null) {
-            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-            String fileName = "SUCCESS_" + result.getMethod().getMethodName() + "_" + timestamp + ".png";
-            
-            Path destinationPath = Paths.get(System.getProperty("user.dir"), "reports", "Screenshots", fileName);
-            File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            
-            try {
-                Files.createDirectories(destinationPath.getParent());
-                Files.copy(screenshotFile.toPath(), destinationPath, StandardCopyOption.REPLACE_EXISTING);
-
-                extentTest.get().addScreenCaptureFromPath("Screenshots/" + fileName, "Booking Confirmation Proof");
-                
-                System.out.println("Success Proof saved and attached to report!");
-            } catch (IOException e) {
-                System.out.println("Failed to save success screenshot: " + e.getMessage());
-            }
-        }
     }
 
     @Override
