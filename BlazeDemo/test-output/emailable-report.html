@@ -8,22 +8,125 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">BlazeDemo Capstone Suite</th></tr>
-<tr><td><a href="#t0">End To End Flight Booking Validation</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">37,486</td><td></td><td></td></tr>
+<tr><th colspan="8">BlazeDemo Negative Suite</th></tr>
+<tr><td><a href="#t0">Authentication and Validation Defect Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">9,243</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">BlazeDemo Capstone Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">End To End Flight Booking Validation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="12">tests.BlazeDemoE2ETest</td><td><a href="#m0">testFlightSearch</a></td><td rowspan="3">1781275984498</td><td rowspan="3">1119</td></tr><tr class="passedeven"><td><a href="#m1">testFlightSearch</a></td></tr><tr class="passedeven"><td><a href="#m2">testFlightSearch</a></td></tr><tr class="passedeven"><td><a href="#m3">testPurchaseFlight</a></td><td rowspan="3">1781275965372</td><td rowspan="3">3861</td></tr><tr class="passedeven"><td><a href="#m4">testPurchaseFlight</a></td></tr><tr class="passedeven"><td><a href="#m5">testPurchaseFlight</a></td></tr><tr class="passedeven"><td><a href="#m6">testSelectCheapestFlight</a></td><td rowspan="3">1781275985621</td><td rowspan="3">1093</td></tr><tr class="passedeven"><td><a href="#m7">testSelectCheapestFlight</a></td></tr><tr class="passedeven"><td><a href="#m8">testSelectCheapestFlight</a></td></tr><tr class="passedeven"><td><a href="#m9">testVerifyBookingConfirmation</a></td><td rowspan="3">1781275990238</td><td rowspan="3">205</td></tr><tr class="passedeven"><td><a href="#m10">testVerifyBookingConfirmation</a></td></tr><tr class="passedeven"><td><a href="#m11">testVerifyBookingConfirmation</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">BlazeDemo Negative Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Authentication and Validation Defect Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">tests.BlazeDemoNegativeTests</td><td><a href="#m0">testDataIntegrityIssue</a></td><td rowspan="1">1781494634022</td><td rowspan="1">945</td></tr><tr class="failedeven"><td><a href="#m1">testLoginThrows419Error</a></td><td rowspan="1">1781494632850</td><td rowspan="1">1097</td></tr><tr class="failedeven"><td><a href="#m2">testRegistrationThrows419Error</a></td><td rowspan="1">1781494630493</td><td rowspan="1">2284</td></tr><tr><th colspan="4">Authentication and Validation Defect Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.BlazeDemoNegativeTests</td><td><a href="#m3">testEmptyFormSubmissionOnPurchase</a></td><td rowspan="1">1781494635066</td><td rowspan="1">1087</td></tr></tbody>
 </table>
-<h2>End To End Flight Booking Validation</h2><h3 id="m0">tests.BlazeDemoE2ETest#testFlightSearch</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.BlazeDemoE2ETest#testFlightSearch</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&apos;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.BlazeDemoE2ETest#testFlightSearch</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.BlazeDemoE2ETest#testPurchaseFlight</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.BlazeDemoE2ETest#testPurchaseFlight</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.BlazeDemoE2ETest#testPurchaseFlight</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&apos;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.BlazeDemoE2ETest#testSelectCheapestFlight</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.BlazeDemoE2ETest#testSelectCheapestFlight</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">tests.BlazeDemoE2ETest#testSelectCheapestFlight</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&apos;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">tests.BlazeDemoE2ETest#testVerifyBookingConfirmation</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Aman Singh, Address=456 Developer Lane, City=Mumbai, State=Maharashtra, ZipCode=400001, CardType=American Express, CardNumber=5.55567E+15, Month=12, Year=2027, NameOnCard=Aman Singh, Departure=Boston, Destination=Berlin}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">tests.BlazeDemoE2ETest#testVerifyBookingConfirmation</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Priya Sharma, Address=789 IT Hub, City=Bangalore, State=Karnataka, ZipCode=560001, CardType=Diner&apos;s Club, CardNumber=9.999E+15, Month=5, Year=2028, NameOnCard=Priya Sharma, Departure=Portland, Destination=Rome}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">tests.BlazeDemoE2ETest#testVerifyBookingConfirmation</h3><table class="result"><tr class="param"><th>Factory Parameter #1</th></tr><tr class="param stripe"><td>{Name=Harsh Choudhary, Address=123 Tech Park, City=Noida, State=Uttar Pradesh, ZipCode=201301, CardType=Visa, CardNumber=1.11122E+15, Month=11, Year=2026, NameOnCard=Harsh Choudhary, Departure=Paris, Destination=London}</td></tr><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Authentication and Validation Defect Tests</h2><h3 id="m0">tests.BlazeDemoNegativeTests#testDataIntegrityIssue</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=149.0.7827.103)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd0802b7c4fab3b79e7a71737c7fc045, clickElement {id=f.181FADC1CBC06C44A109536812C4BA95.d.4F3547F8862046557053658DD6B053D9.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.115 (daf70f9ddee..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53303}, goog:processID: 712, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53303/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bd0802b7c4fab3b79e7a71737c7fc045)] -&gt; css selector: input[type=&apos;submit&apos;]]
+Session ID: bd0802b7c4fab3b79e7a71737c7fc045
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at tests.BlazeDemoNegativeTests.testDataIntegrityIssue(BlazeDemoNegativeTests.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.BlazeDemoNegativeTests#testLoginThrows419Error</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: CRITICAL DEFECT: 419 Page Expired error is blocking the Login flow! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at tests.BlazeDemoNegativeTests.testLoginThrows419Error(BlazeDemoNegativeTests.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.BlazeDemoNegativeTests#testRegistrationThrows419Error</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: CRITICAL DEFECT: 419 Page Expired error is blocking the Registration flow! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at tests.BlazeDemoNegativeTests.testRegistrationThrows419Error(BlazeDemoNegativeTests.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.BlazeDemoNegativeTests#testEmptyFormSubmissionOnPurchase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

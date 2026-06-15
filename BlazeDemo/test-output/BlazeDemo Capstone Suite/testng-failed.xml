@@ -9,11 +9,11 @@
       <class name="tests.BlazeDemoE2ETest">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
           <include name="testPurchaseFlight"/>
+          <include name="tearDown"/>
           <include name="testSelectCheapestFlight"/>
           <include name="testVerifyBookingConfirmation"/>
-          <include name="testFlightSearch"/>
+          <include name="testFlightSearch" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- tests.BlazeDemoE2ETest -->
     </classes>

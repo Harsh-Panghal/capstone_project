@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [BlazeDemo Negative Suite]" verbose="2">
+<suite name="Failed suite [BlazeDemo Negative Suite]" guice-stage="DEVELOPMENT" verbose="2">
   <listeners>
     <listener class-name="listeners.TestListener"/>
   </listeners>
@@ -10,9 +10,9 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="testRegistrationThrows419Error"/>
           <include name="testDataIntegrityIssue"/>
           <include name="testLoginThrows419Error"/>
-          <include name="testEmptyFormSubmissionOnPurchase"/>
         </methods>
       </class> <!-- tests.BlazeDemoNegativeTests -->
     </classes>

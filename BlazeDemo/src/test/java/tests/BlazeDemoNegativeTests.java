@@ -21,9 +21,8 @@ public class BlazeDemoNegativeTests extends BaseTest {
         RegisterPage registerPage = new RegisterPage(driver);
         registerPage.fillRegistrationForm("Harsh", "Automation Inc", "test@gmail.com", "Password@123");
         
-        // Validation: We expect the application to fail with 419
         boolean isErrorDisplayed = driver.getPageSource().contains("419");
-        Assert.assertTrue(isErrorDisplayed, "Defect not reproduced: 419 Error page was expected but not found!");
+        Assert.assertFalse(isErrorDisplayed, "CRITICAL DEFECT: 419 Page Expired error is blocking the Registration flow!");
     }
 
     @Test(priority = 2, description = "Jira Defect : Login Blocked by 419 Error")
@@ -34,9 +33,8 @@ public class BlazeDemoNegativeTests extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.loginUser("test@gmail.com", "Password@123");
         
-        // Validation: We expect the 419 Page Expired text
         boolean isErrorDisplayed = driver.getPageSource().contains("419");
-        Assert.assertTrue(isErrorDisplayed, "Defect not reproduced: 419 Error page was expected but not found!");
+        Assert.assertFalse(isErrorDisplayed, "CRITICAL DEFECT: 419 Page Expired error is blocking the Login flow!");
     }
 
     @Test(priority = 3, description = "Data Integrity Defect: Hardcoded Dummy Data Displayed")
@@ -51,7 +49,7 @@ public class BlazeDemoNegativeTests extends BaseTest {
         String pageText = driver.findElement(By.tagName("body")).getText();
         boolean isHardcodedDataPresent = pageText.contains("Airline: United") && pageText.contains("Price: 400");
         
-        Assert.assertFalse(isHardcodedDataPresent, "Data Integrity Defect: System is displaying hardcoded dummy data (United/400) instead of the actual selected flight!");
+        Assert.assertFalse(isHardcodedDataPresent, "DATA INTEGRITY DEFECT: System is displaying hardcoded dummy data (United/400) instead of the actual selected flight!");
     }
 
     @Test(priority = 4, description = "Form Validation Defect: Submitting Empty Purchase Form")
@@ -61,7 +59,6 @@ public class BlazeDemoNegativeTests extends BaseTest {
         
         PurchasePage purchasePage = new PurchasePage(driver);
         
-        // Passing completely empty data to force validation errors
         HashMap<String, String> emptyData = new HashMap<>();
         emptyData.put("Name", ""); emptyData.put("Address", ""); emptyData.put("City", "");
         emptyData.put("State", ""); emptyData.put("ZipCode", ""); emptyData.put("CardType", "Visa");
@@ -73,6 +70,7 @@ public class BlazeDemoNegativeTests extends BaseTest {
 
         purchasePage.fillDetailsAndPurchase(emptyData, dummyFlight);
         boolean isSuccess = driver.getPageSource().contains("Thank you for your purchase today!");
-        Assert.assertFalse(isSuccess, "Critical Security Bug: System confirmed booking with empty passenger details!");
+
+        Assert.assertFalse(isSuccess, "SECURITY BUG: System confirmed booking with empty passenger details!");
     }
 }
